@@ -25,7 +25,7 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#hero">Accueil</a></li>
         <li><a href="#bio">À Propos</a></li>
-        <li><a href="#services">Services</a></li>
+        <li><a href="#galerie">Galerie</a></li>
         <li><a href="#stats">Stats</a></li>
         <li><a href="#tarifs">Tarifs</a></li>
         <li><a href="#contact" class="nav-cta">Contact</a></li>
@@ -35,11 +35,31 @@
     <!-- ══════════ HERO ══════════ -->
     <section id="hero">
       <div class="hero-bg">
+        <!--
+        ╔══════════════════════════════════════════════════════════════╗
+        ║  IMAGE DE FOND — SECTION ACCUEIL (HERO)                     ║
+        ║                                                              ║
+        ║  Pour changer l'image de fond du hero, va dans style.css    ║
+        ║  et modifie la règle ".hero-bg" (environ ligne 270) :        ║
+        ║                                                              ║
+        ║  Exemple avec une photo locale :                             ║
+        ║    background: url('images/ma-photo.jpg')                    ║
+        ║                center / cover no-repeat;                     ║
+        ║                                                              ║
+        ║  Exemple avec une URL externe :                              ║
+        ║    background: url('https://monsite.com/photo.jpg')          ║
+        ║                center / cover no-repeat;                     ║
+        ║                                                              ║
+        ║  L'overlay sombre et le grain restent automatiquement.       ║
+        ╚══════════════════════════════════════════════════════════════╝
+        -->
         <div class="hero-overlay"></div>
         <div class="hero-grain"></div>
       </div>
       <div class="hero-content fade-in">
-        <p class="hero-eyebrow">Dominatrice Pieds & Findom · Paris & Virtuel</p>
+        <p class="hero-eyebrow">
+          Dominatrice Pieds &amp; Findom · Paris &amp; Virtuel
+        </p>
         <h1 class="hero-title">
           Jasmine<br />
           <em>Dom Pied</em>
@@ -66,10 +86,7 @@
         <div class="bio-grid">
           <div class="bio-image fade-in">
             <div class="bio-img-frame">
-              <img
-                src="https://via.placeholder.com/500x650/1a0000/D4AF37?text=JASMINE"
-                alt="Jasmine Dom Pied"
-              />
+              <img src="images/image00014.jpeg" alt="Jasmine Dom Pied" />
               <div class="bio-img-deco"></div>
             </div>
             <div class="bio-social">
@@ -122,131 +139,89 @@
       </div>
     </section>
 
-    <!-- ══════════ SERVICES ══════════ -->
-    <section id="services" class="section section-dark">
+    <!-- Galerie -->
+    <section id="galerie" class="section">
       <div class="container">
-        <div class="section-header fade-in">
-          <div class="section-label">Mes Services</div>
-          <h2 class="section-title centered">
-            Ce que j'offre<br /><em>à ceux qui méritent.</em>
-          </h2>
-        </div>
-        <div class="services-grid">
-          <div class="service-card fade-in">
-            <div class="service-icon">👠</div>
-            <div class="service-img">
-              <img
-                src="https://via.placeholder.com/400x300/1a0000/D4AF37?text=Foot+Worship"
-                alt="Foot Worship"
-                loading="lazy"
-              />
-              <div class="service-img-overlay">
-                <span>Adoration</span>
-              </div>
-            </div>
-            <h3 class="service-title">Foot Worship</h3>
-            <p class="service-desc">
-              Tu adores mes pieds, tu les embrasses, tu les masses. Pieds nus ou
-              en talons rouges — selon mon humeur, jamais la tienne.
-            </p>
+        <h2 class="section-title">Galerie</h2>
+
+        <!-- Checkbox cachée pour le toggle HTML/CSS pur -->
+        <input
+          type="checkbox"
+          id="galleryToggle"
+          class="gallery-toggle-input"
+        />
+
+        <div class="gallery-grid">
+          <!-- 6 premières images toujours visibles -->
+          <div class="gallery-item">
+            <img src="images/image00001.jpeg" alt="Maîtresse jasmine" />
+            <div class="gallery-overlay"><span>📸</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/image00002.jpeg" alt="Maîtresse jasmine" />
+            <div class="gallery-overlay"><span>📸</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/image00003.jpeg" alt="Maîtresse jasmine" />
+            <div class="gallery-overlay"><span>📸</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/image00004.jpeg" alt="Maîtresse jasmine" />
+            <div class="gallery-overlay"><span>📸</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/image00005.jpeg" alt="Maîtresse jasmine" />
+            <div class="gallery-overlay"><span>📸</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/image00006.jpeg" alt="Maîtresse jasmine" />
+            <div class="gallery-overlay"><span>📸</span></div>
           </div>
 
-          <div class="service-card fade-in">
-            <div class="service-icon">💸</div>
-            <div class="service-img">
-              <img
-                src="https://via.placeholder.com/400x300/1a0000/D4AF37?text=Findom+Drain"
-                alt="Findom Drain"
-                loading="lazy"
-              />
-              <div class="service-img-overlay">
-                <span>Drainé</span>
-              </div>
-            </div>
-            <h3 class="service-title">Findom Drain</h3>
-            <p class="service-desc">
-              Ton portefeuille m'appartient. Tributes spontanés, contrôle
-              mensuel, drain progressif. L'argent est ta façon de prouver ta
-              valeur.
-            </p>
+          <!-- Images cachées par défaut -->
+          <div class="gallery-item gallery-extra">
+            <img src="images/image00007.jpeg" alt="Maîtresse jasmine" />
+            <div class="gallery-overlay"><span>📸</span></div>
           </div>
-
-          <div class="service-card fade-in">
-            <div class="service-icon">🗣️</div>
-            <div class="service-img">
-              <img
-                src="https://via.placeholder.com/400x300/1a0000/D4AF37?text=Humiliation+Verbale"
-                alt="Humiliation Verbale"
-                loading="lazy"
-              />
-              <div class="service-img-overlay">
-                <span>Humilié</span>
-              </div>
-            </div>
-            <h3 class="service-title">Humiliation Verbale</h3>
-            <p class="service-desc">
-              Mots précis, ton froid, regard acéré. Je sais exactement quoi dire
-              pour que tu réalises ta place : en dessous de moi.
-            </p>
+          <div class="gallery-item gallery-extra">
+            <img src="images/image00008.jpeg" alt="Maîtresse jasmine" />
+            <div class="gallery-overlay"><span>📸</span></div>
           </div>
-
-          <div class="service-card fade-in">
-            <div class="service-icon">🔒</div>
-            <div class="service-img">
-              <img
-                src="https://via.placeholder.com/400x300/1a0000/D4AF37?text=Chasteté+Contrôlée"
-                alt="Chasteté Contrôlée"
-                loading="lazy"
-              />
-              <div class="service-img-overlay">
-                <span>Contrôlé</span>
-              </div>
-            </div>
-            <h3 class="service-title">Chasteté Contrôlée</h3>
-            <p class="service-desc">
-              Tu cèdes le contrôle total. Clé, durée, règles — tout est décidé
-              par moi. La frustration est le meilleur des enseignements.
-            </p>
+          <div class="gallery-item gallery-extra">
+            <img src="images/image00009.jpeg" alt="Maîtresse jasmine" />
+            <div class="gallery-overlay"><span>📸</span></div>
           </div>
-
-          <div class="service-card fade-in">
-            <div class="service-icon">🧠</div>
-            <div class="service-img">
-              <img
-                src="https://via.placeholder.com/400x300/1a0000/D4AF37?text=Contrôle+Mental"
-                alt="Contrôle Mental"
-                loading="lazy"
-              />
-              <div class="service-img-overlay">
-                <span>Subjugué</span>
-              </div>
-            </div>
-            <h3 class="service-title">Contrôle Mental</h3>
-            <p class="service-desc">
-              Conditionnement, tâches quotidiennes, mantras imposés. Je sculpte
-              ton esprit jusqu'à ce que ta seule pensée soit : obéir.
-            </p>
+          <div class="gallery-item gallery-extra">
+            <img src="images/image00010.jpeg" alt="Maîtresse jasmine" />
+            <div class="gallery-overlay"><span>📸</span></div>
           </div>
-
-          <div class="service-card fade-in">
-            <div class="service-icon">📱</div>
-            <div class="service-img">
-              <img
-                src="https://via.placeholder.com/400x300/1a0000/D4AF37?text=Séance+Virtuelle"
-                alt="Séance Virtuelle"
-                loading="lazy"
-              />
-              <div class="service-img-overlay">
-                <span>À distance</span>
-              </div>
-            </div>
-            <h3 class="service-title">Séance Virtuelle</h3>
-            <p class="service-desc">
-              Vidéo, vocal ou chat. Peu importe où tu es — ma présence s'impose
-              à travers l'écran. Aucune distance ne te protège.
-            </p>
+          <div class="gallery-item gallery-extra">
+            <img src="images/image00011.jpeg" alt="Maîtresse jasmine" />
+            <div class="gallery-overlay"><span>📸</span></div>
+          </div>
+          <div class="gallery-item gallery-extra">
+            <img src="images/image00012.jpeg" alt="Maîtresse jasmine" />
+            <div class="gallery-overlay"><span>📸</span></div>
+          </div>
+          <div class="gallery-item gallery-extra">
+            <img src="images/image00013.jpeg" alt="Maîtresse jasmine" />
+            <div class="gallery-overlay"><span>📸</span></div>
+          </div>
+          <div class="gallery-item gallery-extra">
+            <img src="images/image00014.jpeg" alt="Maîtresse jasmine" />
+            <div class="gallery-overlay"><span>📸</span></div>
           </div>
         </div>
+
+        <!-- Bouton Voir plus / Voir moins -->
+        <div class="gallery-btn-wrap">
+          <label for="galleryToggle" class="btn-see-more">
+            <span class="label-voir-plus">Voir plus</span>
+            <span class="label-voir-moins">Voir moins</span>
+          </label>
+        </div>
+
+        <p class="gallery-note">📱 Plus de contenu sur mes réseaux privés</p>
       </div>
     </section>
 
@@ -254,7 +229,7 @@
     <section id="stats" class="section">
       <div class="container">
         <div class="section-header fade-in">
-          <div class="section-label">Chiffres & Kit Média</div>
+          <div class="section-label">Chiffres &amp; Kit Média</div>
           <h2 class="section-title centered">
             Ma présence<br /><em>en chiffres.</em>
           </h2>
@@ -392,7 +367,7 @@
             </p>
             <ul class="tarif-list">
               <li>Séance en présentiel Paris</li>
-              <li>Foot worship réel & humiliation live</li>
+              <li>Foot worship réel &amp; humiliation live</li>
               <li>Accès sur sélection stricte</li>
             </ul>
             <a href="#contact" class="btn btn-outline tarif-btn">Postuler</a>
@@ -585,7 +560,7 @@
           <div class="footer-links">
             <a href="#hero">Accueil</a>
             <a href="#bio">Bio</a>
-            <a href="#services">Services</a>
+            <a href="#galerie">Galerie</a>
             <a href="#tarifs">Tarifs</a>
             <a href="#contact">Contact</a>
             <a href="https://x.com/jasminedompied" target="_blank"
